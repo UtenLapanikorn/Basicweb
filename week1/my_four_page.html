@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>กรุณากรอกชื่อ</h2>
+    <input placeholder="Enter Your Name"></input>
+    <h1 id="title">ยินดีต้อนรับ</h1>
+    <button onclick="changeTitle()">เปลี่ยนหัวข้อ</button>
+    <script>
+        function changeTitle() {
+            const title = document.getElementById("title");
+            title.innerHTML = "ขอบคุณที่ใช้บริการ";
+            title.style.color = "blue";
+        }
+    </script>
+</body>
+</html>

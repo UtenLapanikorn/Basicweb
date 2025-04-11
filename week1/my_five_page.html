@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>กรุณากรอกชื่อ</h2>
+    <input type="text" placeholder="กรอกชื่อ" id="nameinput"></input>
+    <h1 id="nameshow">-</h1>
+    <script>
+        document.getElementById("nameinput").addEventListener("input",function() {
+            const value = this.value;
+            document.getElementById("nameshow").innerText = "สวัสดี : " + value;
+        });
+
+    </script>
+</body>
+</html>
